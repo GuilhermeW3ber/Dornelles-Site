@@ -75,7 +75,7 @@ iframe{
     animation: fadeIn 1s ease-out forwards;
 }
 
-.navbar{
+.navbar{ 
     position: fixed;
     display: flex;
     justify-content: center;
@@ -89,9 +89,13 @@ iframe{
     z-index: 1000;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
+
 .navbar img{
-    padding-left: 10px;
+    width: 30px;
+    position: absolute;
+    justify-self: end;
     color: #fff;
+    margin-left: -22vw;
 }
 
 .navbar a{
@@ -147,7 +151,7 @@ iframe{
 
 .nav-container a:hover{
     transition: 0.3s ease-in;
-    background-color: rgb(4,170,109);
+    background-color: #1EBAB9;
 }
 
 .seguros{
@@ -177,13 +181,14 @@ iframe{
 }
 
 .main-container img{
+    position: relative;
     align-self: center;
-    z-index: -2000;
-    position: absolute;
-    height: 100vh;
-    width: 130vw;
-    margin-top: -220px;
-    filter: brightness(70%);
+    border-radius: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-right: -80px;
+    margin-top: 50px;
     justify-content: center;
 }
 
@@ -420,9 +425,9 @@ iframe{
     transition: all 0.35s;
     border: solid;
     border-width: thin;
-    border-color: #0db87c;
+    border-color: #1EBAB9;
     z-index: 1;
-    color: #0db87c;
+    color: #1EBAB9;
 }
 
 .def-button3 {
@@ -461,9 +466,9 @@ iframe{
     transition: all 0.35s;
     border: solid;
     border-width: thin;
-    border-color: #0db87c;
+    border-color: #1EBAB9;
     z-index: 1;
-    color: #0db87c;
+    color: #1EBAB9;
 }
 
 
@@ -501,9 +506,9 @@ iframe{
     transition: all 0.35s;
     border: solid;
     border-width: thin;
-    border-color: #0db87c;
+    border-color: #1EBAB9;
     z-index: 1;
-    color: #0db87c;
+    color: #1EBAB9;
 }
 
 .def-button5 {
@@ -533,9 +538,9 @@ iframe{
     transition: all 0.35s;
     border: solid;
     border-width: thin;
-    border-color: #0db87c;
+    border-color: #1EBAB9;
     z-index: 1;
-    color: #0db87c;
+    color: #1EBAB9;
 }
 
 .servicesCard img{
@@ -559,16 +564,16 @@ iframe{
     width: 0;
     height: 100%;
     color: black;
-    background: #0db87c;
+    background: #1EBAB9;
 }
 
 .servicesWrapper button {
-    border-color: #04AA6D;
-    color: #04AA6D;
+    border-color: #1EBAB9;
+    color: #1EBAB9;
 }
 
 .servicesWrapper button a{
-    color: #04AA6D;
+    color: #1EBAB9;
     transition: 0.3s ease-out;
 }
 
@@ -663,7 +668,7 @@ button:hover:after {
 }
 
 .blog-articles p{
-    color: #0db87c;
+    color: #1EBAB9;
     font-size: 18px;
     font-weight: 600;
     margin-top: -20px;
@@ -672,7 +677,7 @@ button:hover:after {
 
 .portfolio{
     padding-top: 5vh;
-    color: #04AA6D;
+    color: #1EBAB9;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -699,7 +704,7 @@ button:hover:after {
 }
 
 .custom-shape-divider-bottom-1678992552 .shape-fill {
-    fill: rgb(4,170,109);
+    fill: #1EBAB9;
 }
 
 /* Second */
@@ -784,27 +789,27 @@ button:hover:after {
     margin-top: 30px;
     padding-left: 10vw;
     font-size: 20px;
-    color: #04AA6D;
+    color: #1EBAB9;
 }
 
 .main-port-container2 h2{
     margin-top: 30px;
     padding-left: 10vw;
     font-size: 20px;
-    color: #04AA6D;
+    color: #1EBAB9;
 }
 
 .main-port-container2 h1{
     margin-top: 30px;
     padding-left: 10vw;
-    color: #04AA6D;
+    color: #1EBAB9;
 }
 
 .main-port-container2 h3{
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    color: #04AA6D;
+    color: #1EBAB9;
 }
 
 .servicesCard {
@@ -904,7 +909,7 @@ button:hover:after {
     border-radius: 1px;
     display: flex;
     flex-direction: column;
-    color: #04AA6D;
+    color: #1EBAB9;
     background: #fdfdfd;
     transition: 0.3s ease-in;
     margin-bottom: 4rem;
@@ -1171,7 +1176,7 @@ button:hover:after {
 }
 
 .portfolio2{
-    color: #04AA6D;
+    color: #1EBAB9;
     justify-content: center;
     align-items: center;
     background-color: #fdfdfd;
@@ -1202,7 +1207,7 @@ button:hover:after {
 }
 
 .plusButton{
-    background-color: #04AA6D;
+    background-color: #1EBAB9;
 }
 
 .formContainer {
@@ -1269,17 +1274,17 @@ select{
 }
 
 .servicesCardContact a{
-    color: #0db87c;
+    color: #1EBAB9;
     margin-left: 10px;
 }
 
 .servicesCardContact h2{
-    color: #0db87c;
+    color: #1EBAB9;
     margin-top: 10px;
 }
 
 .servicesCardContact p{
-    color: #0db87c;
+    color: #1EBAB9;
     margin-left: 10px;
 }
 
@@ -1493,7 +1498,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     width: 75px;
     height: 75px;
     border: 15px solid #ffffff;
-    border-top-color: #0db87c;
+    border-top-color: #1EBAB9;
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
 }
@@ -1513,7 +1518,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     justify-content: flex-start;
     align-items: center;
     background-color: #fdfdfd;
-    color: #04AA6D;
+    color: #1EBAB9;
 }
 
 .servicesCardConract {
@@ -1527,7 +1532,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-    background: #04AA6D;
+    background: #1EBAB9;
     transition: 0.3s ease-in;
     padding: 3rem 3rem 2.5rem;
     margin-bottom: 4rem;
@@ -1576,8 +1581,8 @@ label{
 
 .whats{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
     z-index: 99999;
     -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
@@ -1586,8 +1591,8 @@ label{
 }
 
 .whats img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     margin-bottom: 5px;
 }
@@ -1601,7 +1606,7 @@ label{
 
 .home-form input{
     padding: 15px;
-    outline: solid 1px #0db87c;
+    outline: solid 1px #1EBAB9;
     border-radius: 40px;
     margin-bottom: 10px;
     margin-right: 5vw;
@@ -1616,7 +1621,7 @@ label{
 }
 
 .home-form a{
-    background-color: #0db87c;
+    background-color: #1EBAB9;
     border-radius: 20px;
     padding-left: -10vw;
     padding-top: 4px;
@@ -1719,7 +1724,7 @@ label{
 
 .redirect a{
     margin-bottom: 20px;
-    color: #0db87c;
+    color: #1EBAB9;
 }
 
 
@@ -1800,6 +1805,15 @@ label{
         max-width: 1300px;
         padding: 0;
     }
+
+    .navbar img{
+        width: 40px;
+        position: absolute;
+        justify-self: start;
+        margin-top: -60vh;
+        margin-left: 5%;
+    }
+
     .navbarMenu {
         display: grid;
         grid-template-columns: auto;
@@ -2126,7 +2140,7 @@ label{
         justify-content: center;
         text-align: center;
         background-color: #fdfdfd;
-        color: #04AA6D;
+        color: #1EBAB9;
     }
     
   
@@ -2141,7 +2155,7 @@ label{
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-    background: #04AA6D;
+    background: #1EBAB9;
     transition: 0.3s ease-in;
     padding: 3rem 3rem 2.5rem;
     margin-bottom: 4rem;
@@ -2277,14 +2291,14 @@ label{
         margin-top: -50px;
         padding-left: 10px;
         font-size: 20px;
-        color: #04AA6D;
+        color: #1EBAB9;
     }
   
     .main-port-container h1{
         padding-left: 6px;
         font-size: 30px;
         margin-bottom: 1vh;
-        color: #04AA6D;
+        color: #1EBAB9;
     }
   
     .assistence h1{
@@ -2605,8 +2619,8 @@ label{
     }
 
     .whats img{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         margin: 10px;
         margin-bottom: 5px;
     }
