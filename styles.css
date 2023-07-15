@@ -661,7 +661,7 @@ button:hover:after {
     grid: 1fr 1fr 1fr 1fr;
 }
 
-.assistenceWrapper{
+.assistanceWrapper{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;  
@@ -850,7 +850,7 @@ button:hover:after {
     cursor: pointer;
 }
 
-.assistenceCard{
+.assistanceCard{
     position: flex;
     margin: 10px;
     height: 250px;
@@ -867,16 +867,16 @@ button:hover:after {
     border-radius: 20px; 
 }
 
-.assistenceCard:hover{
+.assistanceCard:hover{
     transform: scale(1.05);
 }
 
-.assistenceCard h1{
+.assistanceCard h1{
     font-weight: 100px;
     text-align: center;
 }
 
-.assistenceCard h2{
+.assistanceCard h2{
     color: #ffffff;
     font-weight: 550;
     font-size: 20px;
@@ -884,12 +884,12 @@ button:hover:after {
     margin-top: 10px;
 }
 
-.assistenceCard p{
+.assistanceCard p{
     color: #ffffff;
     font-weight: 200px;
 }
 
-.assistence{
+.assistance{
     padding-top: 5vh;
     color: #fff;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Src/paulista.jpg);
@@ -1621,7 +1621,7 @@ label{
         margin-left: 0px;
     }
 
-    .assistence{
+    .assistance{
         display: grid;
         background-position-y: -0px;
     }
@@ -1793,7 +1793,7 @@ label{
         padding-top: 0px;
     }
 
-    .assistence h2{
+    .assistance h2{
         font-size: 20px;
     }
 
@@ -2082,12 +2082,12 @@ label{
         color: #1EBAB9;
     }
   
-    .assistence h1{
+    .assistance h1{
         font-size: 30px;
         margin-bottom: 1vh;
     }
   
-    .assistence p{
+    .assistance p{
         margin-bottom: 1vh;
     }
   
@@ -2415,7 +2415,7 @@ label{
 
 @media screen and (max-width:740px) {
 
-    .assistence{
+    .assistance{
         background-position-x: -800px;
         background-size: 2400px;
     }
