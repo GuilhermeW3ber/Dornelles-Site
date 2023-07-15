@@ -30,7 +30,7 @@ section button{
 }
 
 iframe{
-    margin-top: 45px;
+    margin-top: 0px;
     width: 100vw;
     height: 100vh;
     margin-bottom: -110px;
@@ -71,57 +71,48 @@ iframe{
     opacity: 0;
 }
 
-#cursor.-activated {
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.navbar{ 
-    position: fixed;
+.navbar {
+    background-color: #0F1416;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    height: 45px;
-    width: 100%;
-    left: 0;
-    background: rgb(15,20,22);
-    overflow: hidden;
+    position: sticky;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.navbar img{
-    width: 30px;
-    position: absolute;
-    justify-self: end;
-    color: #fff;
-    margin-left: -22vw;
-}
-
-.navbar a{
-    color: #dfdfdf;
-}
-
-.logo{
-    text-align: center;
+.navbarContainer {
     display: flex;
-    transition: all 0.5s ease;
-    margin: 20px 0 0 10px;
+    justify-content: space-between;
+    height: 40px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
-.logo img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.navbarContainer img{
+    width: 40px;
 }
 
-.logo span{
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+#navbarLogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.nav-container a{
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+}
+
+.navbarMenu a{
     color: #ffffff;
     font-size: 14px;
     width: 100%;
@@ -130,28 +121,9 @@ iframe{
     transition: 0.3s ease-out;
 }
 
-.fas{
-    position: relative;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.nav-container{
-    display: block;
-    justify-content: center;
-    align-items: center;   
-}
-
-.nav-item{
-    position: flex;
-}
-
-.nav-container a:hover{
+.navbarMenu a:hover{
     transition: 0.3s ease-in;
-    background-color: #1EBAB9;
+    color: #1EBAB9;
 }
 
 .seguros{
@@ -180,58 +152,6 @@ iframe{
     background-attachment: fixed;
 }
 
-.main-container img{
-    position: relative;
-    align-self: center;
-    border-radius: 0;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    margin-right: -80px;
-    margin-top: 50px;
-    justify-content: center;
-}
-
-.casa{
-    margin-top: -600px; height: 120vh; width: 120vw;
-}
-
-.main-container2 img{
-    align-self: center;
-    z-index: -2000;
-    position: absolute;
-    height: 100vh;
-    width: 120vw;
-    opacity: 98%;
-    margin-top: -350px;
-    filter: brightness(70%);
-    justify-content: center;
-    margin-left: -10vw;
-}
-
-.main-container3 img{
-    align-self: center;
-    z-index: -2000;
-    position: absolute;
-    height: 100vh;
-    width: 110vw;
-    filter: brightness(70%);
-    justify-content: center;
-    margin-top: -40vh;
-    opacity: 98%;
-    margin-left: -90px;
-}
-
-.main-container4 img{
-    align-self: center;
-    z-index: -2000;
-    position: absolute;
-    height: 750px;
-    margin-top: -370px;
-    filter: brightness(70%);
-    justify-content: center;
-    
-}
 
 .main-content h1{
     font-weight: 800;
@@ -374,21 +294,7 @@ iframe{
     text-align: center;
 }
 
-.def-button::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: black;
-    background: #8cf8d2;
-    transition: all 0.35s;
-    border-radius: 1px;
-    z-index: -100;
-    transition: all 0.35s;
-    opacity: 50%;
-}
+
 
 .def-button2 {
     justify-content: center;
@@ -397,7 +303,7 @@ iframe{
     background: transparent;
     padding: 8px 40px;
     border: none;
-    border-radius: 2px;
+    border-radius: 100px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -437,7 +343,7 @@ iframe{
     background: transparent;
     padding: 8px 40px;
     border: none;
-    border-radius: 2px;
+    border-radius: 100px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -479,7 +385,7 @@ iframe{
     background: transparent;
     padding: 8px 40px;
     border: none;
-    border-radius: 2px;
+    border-radius: 100px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -518,7 +424,7 @@ iframe{
     background: transparent;
     padding: 8px 40px;
     border: none;
-    border-radius: 4px;
+    border-radius: 100px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -532,7 +438,6 @@ iframe{
 }
 
 .def-button5:hover{
-    
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -565,21 +470,6 @@ iframe{
     height: 100%;
     color: black;
     background: #1EBAB9;
-}
-
-.servicesWrapper button {
-    border-color: #1EBAB9;
-    color: #1EBAB9;
-}
-
-.servicesWrapper button a{
-    color: #1EBAB9;
-    transition: 0.3s ease-out;
-}
-
-.servicesWrapper button a:hover{
-    color: #fdfdfd;
-    transition: 0.3s ease-in;
 }
 
 button {
@@ -1026,7 +916,7 @@ button:hover:after {
     height: 600px;
     padding-top: 200px;
     color:#fdfdfd;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./Src/r8.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./Src/auto.jpg);
     background-position-y: -100px;
     background-position-x: 0px;
     background-size: 2000px;
@@ -1386,7 +1276,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(./Src/casaFundoForm.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(./Src/casaTransition.jpg);
     background-size: 2000px;
 }
 
@@ -1418,7 +1308,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Src/car-meet.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Src/autoTransition.png);
     background-size: 100vw;
     
 }
@@ -1562,10 +1452,6 @@ input[type=date]:invalid::-webkit-datetime-edit {
     display: grid;
 }
 
-.navbarMenu a{
-    justify-content: center;
-}
-
 .main-contact-container p{
     padding-left: 10vw;
 }
@@ -1594,7 +1480,7 @@ label{
     width: 40px;
     height: 40px;
     margin: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .home-form{
@@ -1782,14 +1668,9 @@ label{
         margin: 10px; 
     }
 
-    iframe{
-        margin-top: -60px;
-    }
-    body{
-        padding: 0 0 0 0;
-    }
-    .navbarMenu a{
-        align-items: center;
+    .navbar {
+        background-color: rgba(0,0,0,0.5);
+        height: 60px;
     }
 
     .m{
@@ -1806,14 +1687,6 @@ label{
         padding: 0;
     }
 
-    .navbar img{
-        width: 40px;
-        position: absolute;
-        justify-self: start;
-        margin-top: -60vh;
-        margin-left: 5%;
-    }
-
     .navbarMenu {
         display: grid;
         grid-template-columns: auto;
@@ -1825,31 +1698,25 @@ label{
         transition: all 0.5 ease;
         z-index: -1;
     }
+
     .navbarMenu.active {
-        /* background: #131313;
-        top: 0;
+        background: #131313;
+        top: 100%;
         opacity: 1;
         transition: all 0.5 ease;
         z-index: 1000;
-        height: 60vh;
-        font-size: 1.6rem;
-        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); */
-
-        background: #1d1d1d;
-        top: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: all 1.8 ease;
-        z-index: 1000;
-        height: 70vh;
-        font-size: 1.6rem;
-        justify-content: center;
-        align-items: center;
-        opacity: 96%;
-        margin-top: -61px;
-        margin-left: -50vw;
+        height: 90vh;
+        font-size: 1rem;
+        padding-top: 60px;
+        margin-top: -80px;
         z-index: -1;
+        transition: ease-in-out 0.3s;
     }
+    
+    #navbarLogo {
+        padding-left: 25px;
+    }
+
     .navbarToggle .bar {
         width: 25px;
         height: 3px;
@@ -1861,31 +1728,46 @@ label{
     .navbarItem {
         width: 100%;
     }
+
     .Pages {
         text-align: center;
         padding: 2em;
         width: 100%;
         display: table;
     }
+
     .navbarButton {
         padding-bottom: 2rem;
     }
+
+    iframe{
+        margin-top: 0px;
+    }
+
+    body{
+        padding: 0 0 0 0;
+    }
+
     #mobile-menu {
         position: absolute;
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
     }
+
     .navbarToggle .bar {
         display: block;
         cursor: pointer;
     }
+
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
+
     #mobile-menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -2094,8 +1976,6 @@ label{
         margin-left: 0;
     }
 
-
-
     .main-container6 h1{
         margin-left: 0;
         padding-left: 0;
@@ -2144,116 +2024,21 @@ label{
     }
     
   
-  .servicesCardConract {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    margin: 10px;
-    height: 250px;
-    width: 450px;
-    border-radius: 1px;
-    display: flex;
-    flex-direction: column;
-    color: #FFFFFF;
-    background: #1EBAB9;
-    transition: 0.3s ease-in;
-    padding: 3rem 3rem 2.5rem;
-    margin-bottom: 4rem;
-  
-  }
-  
-  @media screen and (max-width:1100px) {
-    body{
-        padding: 0;
-    }
-  
-    .navbar{
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-        height: 60px;
-        display: fixed;
-        margin-left: -50vw;
-        align-items: center;
-        font-size: 1.2rem;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        overflow: visible;
-        box-shadow: none;   
-    }
-  
-    .m{
-        font-size: 45px;
-    }
-  
-    .navbarContainer {
+    .servicesCardConract {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        margin: 10px;
+        height: 250px;
+        width: 450px;
+        border-radius: 1px;
         display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbarMenu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 1;
-        transition: all 0.5 ease;
-        z-index: -1;
-    }
-
-
-    #navbarLogo {
-        padding-left: 25px;
-    }
-
-    .navbarToggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #FFFFFF;
-    }
-
-    .navbarItem {
-        width: 100%;
-    }
-
-    .Pages {
-        text-align: center;
-        padding: 2em;
-        width: 100%;
-        display: table;
-    }
-
-    .navbarButton {
-        padding-bottom: 2rem;
-    }
-
-    .signUp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbarToggle .bar {
-        display: block;
-        cursor: pointer;
+        flex-direction: column;
+        color: #FFFFFF;
+        background: #1EBAB9;
+        transition: 0.3s ease-in;
+        padding: 3rem 3rem 2.5rem;
+        margin-bottom: 4rem;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
@@ -2268,10 +2053,6 @@ label{
 
     #mobile-menu.is-active .nav-container a{
         opacity: 0%;
-    }
-  
-    .direitos{
-        font-size: 10px;
     }
   
     .main-content h1{
@@ -2602,8 +2383,8 @@ label{
         font-size: 30px;
     }
 
-  }   
-}
+}   
+
 
 @media screen and (max-width:1260px) {
     .main-container6{
